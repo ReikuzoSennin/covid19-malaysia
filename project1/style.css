@@ -1,0 +1,148 @@
+* { 
+    box-sizing: border-box;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */ 
+}
+
+*::-webkit-scrollbar {display: none;}
+
+body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: #d8d8d8;
+    padding: 0;
+    margin: 0;
+}
+
+.cases {
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+}
+
+.cases .country {
+    font-size: 3em;
+    text-transform: capitalize;
+    font-weight: bolder;
+    color: #333;
+}
+
+.cases .details {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0 0;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.cases .details span {
+    flex: 1;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 60px;
+    border-width: 50px;
+    flex-basis: 40%;
+    padding: 10px 0 0;
+    border:10px solid white;
+    font-weight: bold;
+    width: 100%
+}
+
+.cases .details span:nth-of-type(1) {
+    flex-basis: 100%;
+    background: rgb(8, 87, 235);
+}
+
+.cases .details span:nth-of-type(2) {
+    background: orange;
+}
+
+.cases .details span:nth-of-type(3) {
+    background: green;
+}
+
+.cases .details span:nth-of-type(4) {
+    background: purple;
+}
+
+.cases .details span:nth-of-type(5) {
+    background: red;
+}
+
+.num {
+    font-size: 100px;
+}
+
+.icu, .death{
+    background: white;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.icu {
+    color: purple;
+}
+
+.death {
+    color: red;
+}
+
+#date {
+    color: black;
+}
+
+@media (max-width:870px) {
+    .num {
+        font-size: 80px;
+    }
+    .cases .details span {
+        font-size: 30px;
+    }
+    .cases .country {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width:777px) {
+    .num {
+        font-size: 70px;
+    }
+    .cases .details span {
+        font-size: 25px;
+    }
+    .cases .country {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width:680px) {
+    .num {
+        font-size: 60px;
+    }
+    .cases .details span {
+        font-size: 20px;
+    }
+    .cases .country {
+        font-size: 2em;
+    }
+}
+
+@media (max-width:580px) {
+    .num {
+        font-size: 60px;
+    }
+    .cases .details span {
+        font-size: 14px;
+    }
+    .cases .country {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width:375px) {
+    .num {
+        font-size: 50px;
+    }
+    .cases .details span {
+        font-size: 20px;
+    }
+}
